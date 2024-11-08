@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset='utf-8'>
+<title>Barbearia do Di</title>
+<link rel='stylesheet' type='text/css' href='style.css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script type='text/javascript' src='script.js'></script>
+</head>
+
+<body>
+<header id='header'>
+    <h1 id='h1-header'>Barbearia do Di</h1>
+    <h4 class='h4-header'>"Experiência premium, estilo impecável. Venha para a Barbearia do Di e descubra o novo você!"</h4>
+</header>    
+    <p>"Segue nossos contatos"<p>
+        <br>
+<br>
+             <a href="https://wa.me/+5511946838523?text=Fale%20conosco">Via Whatsapp!</a>
+             <br>
+             
+             
+<a href="https://wa.me/5511946838523?text=Bem%20vindo%20a%20Barbearia%20do%20Di%20!" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+<i style="margin-top:16px" class="fa fa-whatsapp"></i>
+</a>
+<br>
+<h2> Veja onde estamos localizados!</h2>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.098343912163!2d-46.76495752551811!3d-23.348451378946592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cee39407f3e77b%3A0x878010a0affbaeb4!2sR.%20Maria%20Margarete%20da%20Cruz%2C%20519%20-%20Serpa%2C%20Caieiras%20-%20SP%2C%2007700-000!5e0!3m2!1spt-BR!2sbr!4v1730568080319!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+             <h2>JavaScript Geolocation API</h2>
+             <p>Clique no botão e veja suas coordenadas.</p>
+             
+             <button onclick="getLocation()">Clique aqui</button>
+             
+             <p id="demo"></p>
+             
+             <script>
+             const x = document.getElementById("demo");
+             
+             function getLocation() {
+               if (navigator.geolocation) {
+                 navigator.geolocation.getCurrentPosition(showPosition);
+               } else { 
+                 x.innerHTML = "Geolocation is not supported by this browser.";
+               }
+             }
+             
+             function showPosition(position) {
+               x.innerHTML = "Latitude: " + position.coords.latitude + 
+               "<br>Longitude: " + position.coords.longitude;
+             }
+             </script>
+             
+
+<br>
+   
+</body>
+</html>
+
+
+
+
+
