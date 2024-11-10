@@ -17,7 +17,7 @@ body {
 
 nav {
   background-color: #062912;
-  width: 100%;
+  width: 100% !important;
 }
 
 .logo {
@@ -100,12 +100,22 @@ a.nav-link {
   transition: background-color 0.3s ease;
 }
 
-.whatsapp-button {
-  background-color: #25d366;
-}
+.container-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
 
-.whatsapp-button:hover {
-  background-color: #1c9b4d;
+  h4 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  p {
+    color: red;
+    font-weight: bold;
+  }
 }
 
 .view-schedule-button {
