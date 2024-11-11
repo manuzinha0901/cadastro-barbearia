@@ -11,7 +11,7 @@ document
     const form = document.getElementById("cadastroForm");
 
     const response = await fetch(
-      "https://appbarbearia.vercel.app/api/barbearia",
+      "https://https://barbeariadodi.vercel.app/api/barbearia",
       {
         method: "POST",
         headers: {
