@@ -18,6 +18,6 @@ const BarberSchema = new mongoose.Schema({
   senha: String,
 });
 
-const Barber = mongoose.model("ProjetoFaculdade", BarberSchema);
+const Barber = mongoose.model("barbearia", BarberSchema);
 
 module.exports = { Barber };
